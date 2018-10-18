@@ -1,0 +1,34 @@
+1) Create a new Angular 6 project with Angular CLI
+
+The main module will have 2 components: Users and Posts
+
+2) Create a Users Component that will list all available users from the API
+(https://jsonplaceholder.typicode.com/users) when it loads
+Render the results in a visually pleasing manner.
+
+You may use any third party UI library (Bootstrap, Material, Fontawesome), but the code should be original.
+ Feel free to be creative.
+
+2.1) Each result item should have a link to render the full User details based on their ID.
+The full User details are available from the API (ex: https://jsonplaceholder.typicode.com/users/1 )
+When clicked, the link should fetch and render the User details in a visually pleasing manner.
+
+3) Create a Posts Component and repeat the steps for User.
+3.1) Create a button on the Posts page "Create Post" which when clicked,
+ will render a form with the following fields:
+-Title
+-Body
+The form will have a submit button, which when clicked will validate the form and perform a POST
+to the API to save the new record.
+
+When validating, both fields are required. Title has a max length of 24 and should be alphanumeric only,
+and Body has a max length of 50.
+
+Render an error message if validation fails.
+An example of how to perform a POST to the API
+is listed here: https://github.com/typicode/jsonplaceholder#how-to
+Note: The API will only simulate the insert.
+
+Render a success or error message after the simulated save completes.
+4) Create a navigational menu so that you can navigate between User and Posts components.
+You may use a third party library, but code must be original and visually pleasing.

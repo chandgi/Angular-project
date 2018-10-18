@@ -1,0 +1,28 @@
+<div>
+  <br>
+  <mat-card>
+    <section class="mat-typography">
+      <h3>Post Details</h3>
+    </section>
+    <mat-divider></mat-divider>
+    <br>
+    <form [formGroup]="updateForm" class="edit-form">
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="userId" formControlName="userId" value={{issue.userId}} disabled #title>
+
+      </mat-form-field>
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="Id" formControlName="id" value={{issue.id}} disabled #userId>
+      </mat-form-field>
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="title" formControlName="title" value={{issue.title}} disabled #id>
+      </mat-form-field>
+      <mat-form-field class="field-full-width">
+        <textarea matInput placeholder="body" formControlName="body" value={{issue.body}} disabled #id></textarea>
+      </mat-form-field>
+      <mat-divider></mat-divider>
+      <br><br>
+      <button mat-raised-button color="accent" routerLink="/list">Back</button>&nbsp;
+    </form>
+  </mat-card>
+</div>
